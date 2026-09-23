@@ -4,31 +4,41 @@
 This project was completed as part of my Data Science internship at CodeAlpha.
 
 ## Problem Statement
-[Write 1-2 sentences: what you're predicting/analyzing and why it matters]
+Analyze unemployment rate trends across Indian states during 2020, with a focus on the impact of the Covid-19 lockdown, and identify regional and urban/rural patterns.
 
 ## Dataset
-[Add source/link here + short description of the features]
+267 records covering 27 Indian regions from February to October 2020, including unemployment rate, estimated employed population, and labour participation rate, split by urban/rural area.
 
 ## Approach
-- Data loading and exploration
-- [Cleaning steps you performed]
-- [Feature engineering steps you performed]
-- Model training ([which models you used])
-- Evaluation ([metrics used, e.g. accuracy, R², confusion matrix])
+- Data loading, cleaning, and date parsing
+- National unemployment trend over time, with lockdown period highlighted
+- Pre-lockdown vs during-lockdown vs post-lockdown comparison
+- Regional comparison across all 27 states
+- Labour participation rate vs unemployment rate relationship
+- Urban vs rural unemployment trend comparison
 
-## Results
-- [Key metric]: [X%]
-- Key insight: [1-2 sentences on what you found]
+## Results & Key Insights
+- **Unemployment spiked dramatically during lockdown: 9.76% (pre-lockdown) → 22.75% (during lockdown, Apr-May) → 9.56% (post-lockdown recovery)**
+- Highest average unemployment: Haryana (27.48%)
+- Lowest average unemployment: Meghalaya (3.87%)
+- Significant regional disparity in how hard different states were hit
+- Urban and rural areas showed different recovery patterns after the lockdown eased
 
-![chart](images/your_chart.png)
+## Policy Implication
+The sharp spike-and-recovery pattern, combined with major regional disparity, suggests economic relief during similar disruptions should be regionally targeted rather than applying a single uniform national approach.
+
+![Unemployment Trend](images/unemployment_trend.png)
+![Covid Impact Comparison](images/covid_impact_comparison.png)
+![Regional Comparison](images/regional_comparison.png)
+![Urban vs Rural](images/urban_rural_comparison.png)
 
 ## Tools Used
-Python, pandas, scikit-learn, matplotlib, seaborn
+Python, pandas, matplotlib, seaborn
 
 ## How to Run
 1. Clone this repo
 2. Install requirements: `pip install -r requirements.txt`
-3. Open `notebook/` in Jupyter or Google Colab
+3. Open `notebook/unemployment_analysis.ipynb` in Jupyter or Google Colab
 4. Run all cells
 
 ## Video Explanation
